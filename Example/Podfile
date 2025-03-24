@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'UnibowlSDK_Example' do
+  pod 'UnibowlSDK', :path => '../'
+
+  target 'UnibowlSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
