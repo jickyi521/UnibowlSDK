@@ -3,7 +3,11 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'UnibowlSDK_Example' do
-  pod 'UnibowlSDK', :path => '../'
+  
+# 本地调试
+#  pod 'UnibowlSDK', :path => '../'
+
+pod 'UnibowlSDK'
 
   target 'UnibowlSDK_Tests' do
     inherit! :search_paths
