@@ -1,0 +1,6 @@
+framework module UnibowlSDK {
+  umbrella header "UnibowlSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

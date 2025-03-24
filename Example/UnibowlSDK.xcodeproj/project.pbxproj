@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06E23CD12D913D7200189EBF /* UnibowlSDK_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnibowlSDK_Example.entitlements; sourceTree = "<group>"; };
 		427499C2D47B20DC9E2602EB /* Pods_UnibowlSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnibowlSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C3CB89F65C06FE88775B0D /* Pods-UnibowlSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnibowlSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UnibowlSDK_Tests/Pods-UnibowlSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FCCDFD2F0595AE33AD5E870 /* Pods_UnibowlSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnibowlSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,10 +63,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		899C815857934708B4FDE511 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C7A81D8E6E75998412462F38 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		899C815857934708B4FDE511 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C7A81D8E6E75998412462F38 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E4C6F741370AF0868D76C84C /* Pods-UnibowlSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnibowlSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-UnibowlSDK_Example/Pods-UnibowlSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F14B5999C485AC1794F611A5 /* UnibowlSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = UnibowlSDK.podspec; path = ../UnibowlSDK.podspec; sourceTree = "<group>"; };
+		F14B5999C485AC1794F611A5 /* UnibowlSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UnibowlSDK.podspec; path = ../UnibowlSDK.podspec; sourceTree = "<group>"; };
 		F8DB3995C7164431EDA51207 /* Pods-UnibowlSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnibowlSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-UnibowlSDK_Example/Pods-UnibowlSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +99,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				06E23CD12D913D7200189EBF /* UnibowlSDK_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for UnibowlSDK */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,7 +195,6 @@
 				43C3CB89F65C06FE88775B0D /* Pods-UnibowlSDK_Tests.debug.xcconfig */,
 				5886A3A013C3B76926EE8015 /* Pods-UnibowlSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +249,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jickyi521;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = C2HC4VFL36;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,11 +499,13 @@
 			baseConfigurationReference = E4C6F741370AF0868D76C84C /* Pods-UnibowlSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnibowlSDK_Example.entitlements;
+				DEVELOPMENT_TEAM = C2HC4VFL36;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnibowlSDK/UnibowlSDK-Prefix.pch";
 				INFOPLIST_FILE = "UnibowlSDK/UnibowlSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = co.unibowl.wallet.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -510,11 +517,13 @@
 			baseConfigurationReference = F8DB3995C7164431EDA51207 /* Pods-UnibowlSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UnibowlSDK_Example.entitlements;
+				DEVELOPMENT_TEAM = C2HC4VFL36;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnibowlSDK/UnibowlSDK-Prefix.pch";
 				INFOPLIST_FILE = "UnibowlSDK/UnibowlSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = co.unibowl.wallet.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

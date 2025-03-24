@@ -1,0 +1,16 @@
+PODS:
+  - UnibowlSDK (0.1.0)
+
+DEPENDENCIES:
+  - UnibowlSDK (from `../`)
+
+EXTERNAL SOURCES:
+  UnibowlSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UnibowlSDK: 2f2933fc9a5236f1c3a6cfa61b01ab149cd8c082
+
+PODFILE CHECKSUM: 3fc83640f9a597d5693a300a8a0b79bb83c29740
+
+COCOAPODS: 1.15.2
